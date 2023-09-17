@@ -67,11 +67,13 @@
                             >
                                 <option selected>Select a Node by ID</option>
                                 
-                                    <option value="top_10_met_type_histograms">top_10_met_type_histograms</option>
+                                    <option value="folder2">folder2</option>
                                 
-                                    <option value="between_1970_2000_annotated_sns_histogram">between_1970_2000_annotated_sns_histogram</option>
+                                    <option value="folder1">folder1</option>
                                 
-                                    <option value="between_1970_2000_annotated_plt_histogram">between_1970_2000_annotated_plt_histogram</option>
+                                    <option value="sample2.py">sample2.py</option>
+                                
+                                    <option value="sample1.py">sample1.py</option>
                                 
                             </select>
                         </div>
@@ -125,8 +127,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#FFDEB4", "font": {"color": "black"}, "id": "top_10_met_type_histograms", "label": "top_10_met_type_histograms", "shape": "circle", "size": 40, "title": "top_10_met_type_histograms"}, {"color": "#FFDEB4", "font": {"color": "black"}, "id": "between_1970_2000_annotated_sns_histogram", "label": "between_1970_2000_annotated_sns_histogram", "shape": "circle", "size": 40, "title": "between_1970_2000_annotated_sns_histogram"}, {"color": "#FFDEB4", "font": {"color": "black"}, "id": "between_1970_2000_annotated_plt_histogram", "label": "between_1970_2000_annotated_plt_histogram", "shape": "circle", "size": 40, "title": "between_1970_2000_annotated_plt_histogram"}]);
-                  edges = new vis.DataSet([]);
+                  nodes = new vis.DataSet([{"color": "#FFDEB4", "font": {"color": "black"}, "id": "folder2", "label": "folder2", "shape": "circle", "size": 40, "title": "This code snippet appears to be analyzing a dataset of meteorite landings. The code first filters the data to include only meteorite landings between the years 860 and 2016, and only those with a recorded longitude within the range of -180 to 180. It then further filters the data to exclude any meteorite landings with a recorded latitude and longitude of 0, which are likely to be inaccurate. The code then finds the indices of rows in the dataset where the mass is missing, and replaces the missing mass values"}, {"color": "#FFDEB4", "font": {"color": "black"}, "id": "folder1", "label": "folder1", "shape": "circle", "size": 40, "title": "This Python code creates a visual representation of data using the Seaborn and Matplotlib libraries. The code creates two functions: one creates a histogram with annotated values, and the other creates a histogram with a title using the Matplotlib library. The code then counts the number of times each meteorite class appears in the data set and creates a histogram for the top 10 most frequent meteorite types. The `plt.show()` function displays the plot.\n\nOverall, the code creates a visual representation of"}, {"color": "#A5D7E8", "font": {"color": "black"}, "id": "sample2.py", "label": "sample2.py", "shape": "circle", "size": 25, "title": "The code you provided appears to be a Python program that reads in a dataset of meteorite landings, filters the data to include only landings between the years 860 and 2016, and further filters the data to include only landings with a reclong (presumably a measurement of the longitude of the landing location) between -180 and 180. The program then appears to calculate the median mass of the meteorites that landed within the specified range of years and longitudes, and assigns the median mass to any rows in"}, {"color": "#A5D7E8", "font": {"color": "black"}, "id": "sample1.py", "label": "sample1.py", "shape": "circle", "size": 25, "title": "This Python code generates a histogram of the number of meteorites that fell between the years 1970 and 2000. The code then annotates the histogram with the number of meteorites that fell each year. The code also generates a histogram of the top 10 most frequent types of meteorites that fell during the same time period.\n\nOverall, the code is designed to visualize the data stored in the \u0027correct_lat_long_df\u0027 DataFrame, which contains information on meteorite falls between the years"}]);
+                  edges = new vis.DataSet([{"arrowStrikethrough": false, "arrows": "to", "color": "#FFDEB4", "from": "folder2", "to": "sample2.py", "width": 3}, {"arrowStrikethrough": false, "arrows": "to", "color": "#FFDEB4", "from": "folder1", "to": "sample1.py", "width": 3}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
